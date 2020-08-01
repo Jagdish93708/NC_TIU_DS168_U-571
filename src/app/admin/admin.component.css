@@ -1,0 +1,34 @@
+.bg{
+    background-color: gray;
+    border-radius: 2px ;
+    height: 900px;
+    width: 200px;
+    text-align: center;
+    text-decoration: white;
+}
+
+.hd{
+    background-color: honeydew;
+    text-decoration-color: black ;
+    text-align: center;
+}
+
+.cn{
+    padding-left: 50;
+}
+
+.left{
+    text-align:left;
+    padding-left: 50;
+    text-decoration-color: thistle;
+
+}
+
+.md{
+    border-radius: 2px red;
+    border-right: violet;
+    background-color: yellowgreen;
+    width: 600;
+
+
+}
