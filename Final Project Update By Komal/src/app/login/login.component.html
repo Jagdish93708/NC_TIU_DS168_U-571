@@ -1,0 +1,36 @@
+<div id=main1>
+<div class="login">
+    <h2 class="login-header">Login</h2>
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+
+       <div class="form-group">
+          Role: <input type="radio" id="ad" name="role" value="admin" formControlName="role">
+          <label for="ad">Admin</label>
+          <input type="radio" id="acc" name="role" value="accountant" formControlName="role">
+          <label for="acc">Accountant</label>
+          <input type="radio" id="cl" name="role" value="clerk" formControlName="role">
+          <label for="cl">Clerk</label>
+      </div>
+    
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+        <input type="email" placeholder="Username" formControlName="email">
+      </p>
+  
+      <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+        <div *ngIf="formControls.email.errors.required">Email is required</div>
+      </div>
+  
+      <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+        <input type="password" placeholder="Password" formControlName="password">
+      </p>
+  
+      <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+        <div *ngIf="formControls.password.errors.required">Password is required</div>
+      </div>
+  
+      <p>
+        <input type="submit" value="Sign In">
+      </p>
+    </form>
+  </div>
+</div>

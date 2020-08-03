@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+#main1{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/pic/hd9.jpg );
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
+}
+#Ad{
+    background-color: rgb(71, 80, 82);
+    
+   
+}
+
+#main{
+    justify-content: center;
+    border: 1px solid gray;
+    height: 100svh;
+    width: 70vw;
+    background-color: rgb(163, 219, 230);
+    margin-top: 5px;
+    padding: 5px;
+}
+
